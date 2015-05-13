@@ -40,7 +40,6 @@ public class HangmanCanvas extends GCanvas {
 		GLabel unGuessedWord = new GLabel(word, x, y);
 		unGuessedWord.setFont("Halvetica-24");
 		add(unGuessedWord);
-		
 	}
 
 /**

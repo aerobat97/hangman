@@ -144,10 +144,12 @@ public class Hangman extends ConsoleProgram {
 		if(word.indexOf(ch) != -1) {
 			println("The guess is correct.");
 		}	else if(word.indexOf(ch) == -1) {
-			println("There are no " + ch + "'s in the word");
 			if (guessed == false) {
+				println("There are no " + ch + "'s in the word");
 				guessCounter--;
 				incorrectLetters = incorrectLetters + ch;
+			} else {
+				println("You already guessed " + ch);
 			}
 			canvas.noteIncorrectGuess(incorrectLetters);
 		}
